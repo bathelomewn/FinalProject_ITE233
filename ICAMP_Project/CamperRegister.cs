@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace ICAMP_Project
 {
@@ -8,11 +9,15 @@ namespace ICAMP_Project
         public CamperRegister()
         {
             InitializeComponent();
-       
         }
  
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CamperRegister_Load(object sender, EventArgs e)
         {
 
         }
