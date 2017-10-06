@@ -22,13 +22,13 @@ namespace ICAMP_Project
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void addSession_Click(object sender, EventArgs e)
         {
-            String namestr = comboBox1.Text;
-            comboBox1.Items.Add(namestr);
+            String namestr = sessionAdding.Text;
+            sessionAdding.Items.Add(namestr);
 
-            //comboBox1.Items.Clear();
-
+            //sessionAdding.Items.Clear();
         }
     }
 }
