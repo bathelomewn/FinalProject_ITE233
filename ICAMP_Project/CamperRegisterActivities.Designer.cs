@@ -208,7 +208,8 @@
             this.listBox1.Items.AddRange(new object[] {
             "Swimming",
             "Archery",
-            "SoftBall"});
+            "SoftBall",
+            "Piano"});
             this.listBox1.Location = new System.Drawing.Point(6, 27);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(120, 95);
