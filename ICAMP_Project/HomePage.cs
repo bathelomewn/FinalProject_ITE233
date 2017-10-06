@@ -12,6 +12,9 @@ namespace ICAMP_Project
 {
     public partial class HomePage : Form
     {
+
+        DBAccess db = new DBAccess();
+
         public HomePage()
         {
             InitializeComponent();
@@ -24,11 +27,18 @@ namespace ICAMP_Project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String namestr = comboBox1.Text;
-            comboBox1.Items.Add(namestr);
+            String namestr = sessionName.Text;
+            sessionName.Items.Add(namestr);
 
-            //comboBox1.Items.Clear();
 
+            
+
+        }
+
+        private void sessionAdd_Click(object sender, EventArgs e)
+        {
+            String namestr = sessionName.Text;
+            sessionName.Items.Add(namestr);
         }
     }
 }
