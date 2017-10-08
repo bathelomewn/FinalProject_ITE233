@@ -58,13 +58,8 @@
             // 
             this.sessionName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sessionName.FormattingEnabled = true;
-            this.sessionName.Items.AddRange(new object[] {
-            "Section 1",
-            "Section 2",
-            "Section 3",
-            "Section 4"});
-            this.sessionName.Location = new System.Drawing.Point(286, 61);
-            this.sessionName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sessionName.Location = new System.Drawing.Point(275, 57);
+            this.sessionName.Margin = new System.Windows.Forms.Padding(4);
             this.sessionName.Name = "sessionName";
             this.sessionName.Size = new System.Drawing.Size(172, 33);
             this.sessionName.TabIndex = 1;
@@ -72,7 +67,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(61, 61);
+            this.label2.Location = new System.Drawing.Point(50, 57);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(224, 30);
@@ -82,8 +77,8 @@
             // sessionAdd
             // 
             this.sessionAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sessionAdd.Location = new System.Drawing.Point(467, 61);
-            this.sessionAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sessionAdd.Location = new System.Drawing.Point(456, 57);
+            this.sessionAdd.Margin = new System.Windows.Forms.Padding(4);
             this.sessionAdd.Name = "sessionAdd";
             this.sessionAdd.Size = new System.Drawing.Size(73, 28);
             this.sessionAdd.TabIndex = 3;
@@ -97,9 +92,9 @@
             this.groupBox1.Controls.Add(this.chooseActivity);
             this.groupBox1.Controls.Add(this.RegisterStudent);
             this.groupBox1.Location = new System.Drawing.Point(20, 124);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(253, 215);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
@@ -109,34 +104,37 @@
             // 
             this.registerActivity.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registerActivity.Location = new System.Drawing.Point(8, 154);
-            this.registerActivity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.registerActivity.Margin = new System.Windows.Forms.Padding(4);
             this.registerActivity.Name = "registerActivity";
             this.registerActivity.Size = new System.Drawing.Size(237, 53);
             this.registerActivity.TabIndex = 2;
             this.registerActivity.Text = "RegisterActivities";
             this.registerActivity.UseVisualStyleBackColor = true;
+            this.registerActivity.Click += new System.EventHandler(this.registerActivity_Click);
             // 
             // chooseActivity
             // 
             this.chooseActivity.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chooseActivity.Location = new System.Drawing.Point(8, 89);
-            this.chooseActivity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chooseActivity.Margin = new System.Windows.Forms.Padding(4);
             this.chooseActivity.Name = "chooseActivity";
             this.chooseActivity.Size = new System.Drawing.Size(237, 53);
             this.chooseActivity.TabIndex = 1;
             this.chooseActivity.Text = "Choose Activities";
             this.chooseActivity.UseVisualStyleBackColor = true;
+            this.chooseActivity.Click += new System.EventHandler(this.chooseActivity_Click);
             // 
             // RegisterStudent
             // 
             this.RegisterStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RegisterStudent.Location = new System.Drawing.Point(8, 23);
-            this.RegisterStudent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RegisterStudent.Margin = new System.Windows.Forms.Padding(4);
             this.RegisterStudent.Name = "RegisterStudent";
             this.RegisterStudent.Size = new System.Drawing.Size(237, 53);
             this.RegisterStudent.TabIndex = 0;
             this.RegisterStudent.Text = "Register/Edit";
             this.RegisterStudent.UseVisualStyleBackColor = true;
+            this.RegisterStudent.Click += new System.EventHandler(this.RegisterStudent_Click);
             // 
             // groupBox2
             // 
@@ -144,9 +142,9 @@
             this.groupBox2.Controls.Add(this.Details);
             this.groupBox2.Controls.Add(this.signupSheets);
             this.groupBox2.Location = new System.Drawing.Point(281, 124);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(281, 215);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
@@ -155,7 +153,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(3, 23);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
             this.dateTimePicker1.TabIndex = 3;
@@ -164,7 +162,7 @@
             // 
             this.Details.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Details.Location = new System.Drawing.Point(8, 155);
-            this.Details.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Details.Margin = new System.Windows.Forms.Padding(4);
             this.Details.Name = "Details";
             this.Details.Size = new System.Drawing.Size(261, 53);
             this.Details.TabIndex = 2;
@@ -175,7 +173,7 @@
             // 
             this.signupSheets.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signupSheets.Location = new System.Drawing.Point(8, 89);
-            this.signupSheets.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.signupSheets.Margin = new System.Windows.Forms.Padding(4);
             this.signupSheets.Name = "signupSheets";
             this.signupSheets.Size = new System.Drawing.Size(261, 53);
             this.signupSheets.TabIndex = 1;
@@ -193,10 +191,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.sessionName);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HomePage";
             this.Text = "Home Page";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);

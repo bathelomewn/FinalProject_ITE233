@@ -36,10 +36,10 @@ namespace ICAMP_Project
 
         }
 
-        //adding new student
-        public void InsertStudent(string name, string start_date, string leave_date, string student_bunk, string nationality, string prefered_name, int age, string restriction, string medication, string transportation, string p1name, string p1email, string p1phone, string p2name, string p2email, string p2phone)
+        public void sessionRegister(string sessionName, string startdate, string enddate)
         {
-            string query = "INSERT INTO camp_student(Name, START_DATE,LEAVE_DATE,STUDENT_BUNK,NATIONALITY,PREFERED_NAME,AGE,RESTRICTION,MEDICATIONS,TRANSPORTATION, PARENT1_NAME,PARENT1_EMAIL,PARENT1_PHONE, PARENT2_NAME,PARENT2_EMAIL,PARENT2_PHONE) VALUES('" + name + "','" + start_date + "', '" + leave_date + "', '" + student_bunk + "', '" + nationality + "', '" + prefered_name + "', '" + age + "', '" + restriction + "', '" + medication + "', '" + transportation + "', '" + p1name + "', '" + p1email + "', '" + p1phone + "', '" + p2name + "', '" + p2email + "', '" + p2phone + "')";
+            
+            string query = "INSERT INTO camp_session(SESSION_NAME, SESSION_START_DATE,SESSION_END_DATE) VALUES('" + sessionName + "', '"+ startdate + "', '" + enddate + "')";
 
             if (connection.State == System.Data.ConnectionState.Closed)
             {
@@ -50,5 +50,21 @@ namespace ICAMP_Project
             cmd.ExecuteNonQuery();
             connection.Close();
         }
+
+        public void camperRegister(string name, string startdate, string enddate, string bunk, string nationality, string nickname, string age, string restriction, string medication, string transportation, string p1name, string p1email, string p1phone, string p2name,  string p2email, string p2phone)
+        {                                                                                                                                                                                                                                                                         
+            string query = "INSERT INTO camp_student(NAME, START_DATE,END_DATE, STUDENT_BUNK, NATIONALITY, PREFERED_NAME, AGE, RESTRICTION, MEDICATIONS, TRANSPORTATION, PARENT1_NAME, PARENT1_EMAIL, PARENT1_PHONE, PARENT2_NAME, PARENT2_EMAIL, PARENT2_PHONE) VALUES('" + name + "', '" + startdate + "', '" + enddate + "', '" + bunk + "', '" + nationality + "', '" + nickname + "', '" + age + "', '" + restriction + "', '" + medication + "', '" + transportation + "', '" + p1name + "', '" + p1email + "', '" + p1phone + "', '" + p2name + "', '" + p2email + "', '" + p2phone + "')";
+
+            if (connection.State == System.Data.ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            cmd.ExecuteNonQuery();
+            connection.Close();
+        }
+
+
     }
 }

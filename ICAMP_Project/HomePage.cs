@@ -20,25 +20,35 @@ namespace ICAMP_Project
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             String namestr = sessionName.Text;
             sessionName.Items.Add(namestr);
-
-
-            
-
         }
 
         private void sessionAdd_Click(object sender, EventArgs e)
         {
-            String namestr = sessionName.Text;
-            sessionName.Items.Add(namestr);
+            session session = new session();
+            session.Show();
+            Hide();
+        }
+
+        private void RegisterStudent_Click(object sender, EventArgs e)
+        {
+            CamperRegister register = new CamperRegister();
+            register.ShowDialog();
+        }
+
+        private void chooseActivity_Click(object sender, EventArgs e)
+        {
+            CamperSelectActivities select = new CamperSelectActivities();
+            select.ShowDialog();
+        }
+
+        private void registerActivity_Click(object sender, EventArgs e)
+        {
+            CamperRegisterActivities registerActivity = new CamperRegisterActivities();
+            registerActivity.ShowDialog();
         }
     }
 }
