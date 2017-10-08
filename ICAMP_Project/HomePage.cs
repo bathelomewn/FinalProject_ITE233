@@ -12,23 +12,43 @@ namespace ICAMP_Project
 {
     public partial class HomePage : Form
     {
+
+        DBAccess db = new DBAccess();
+
         public HomePage()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            String namestr = sessionName.Text;
+            sessionName.Items.Add(namestr);
         }
 
-
-        private void addSession_Click(object sender, EventArgs e)
+        private void sessionAdd_Click(object sender, EventArgs e)
         {
-            String namestr = sessionAdding.Text;
-            sessionAdding.Items.Add(namestr);
+            session session = new session();
+            session.Show();
+            Hide();
+        }
 
-            //sessionAdding.Items.Clear();
+        private void RegisterStudent_Click(object sender, EventArgs e)
+        {
+            CamperRegister register = new CamperRegister();
+            register.ShowDialog();
+        }
+
+        private void chooseActivity_Click(object sender, EventArgs e)
+        {
+            CamperSelectActivities select = new CamperSelectActivities();
+            select.ShowDialog();
+        }
+
+        private void registerActivity_Click(object sender, EventArgs e)
+        {
+            CamperRegisterActivities registerActivity = new CamperRegisterActivities();
+            registerActivity.ShowDialog();
         }
     }
 }

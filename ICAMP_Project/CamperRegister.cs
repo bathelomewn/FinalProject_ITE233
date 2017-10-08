@@ -7,6 +7,8 @@ namespace ICAMP_Project
 {
     public partial class CamperRegister : Form
     {
+
+        DBAccess db = new DBAccess();
         public CamperRegister()
         {
             InitializeComponent();
@@ -20,36 +22,13 @@ namespace ICAMP_Project
 
         private void CamperRegister_Load(object sender, EventArgs e)
         {
-            string cs = @"server=localhost;userid=root;
-            password='';database=icamp";
+           
+        }
 
-            MySqlConnection conn = null;
-            MySqlDataReader reader = null;
-            try
-            {
-                conn = new MySqlConnection(cs);
-                conn.Open();
+        private void save_btn_Click(object sender, EventArgs e)
+        {
+            db.camperRegister(camperName.Text, dtpAdmission.Value.ToString("yyyy/M/d"), dtp2Admission.Value.ToString("yyyy/M/d"), camperBunk.Text, camperNation.Text, nickName.Text, camperAge.Text, camperRestriction.Text,camperMedications.Text,camperTransportation.Text, guard1Name.Text,guard1Email.Text,guard1Phone.Text,guard2Name.Text,guard2Email.Text,guard2Phone.Text);
 
-                String cmdText = "SELECT name FROM camper"; // sql command as string
-                MySqlCommand cmd = new MySqlCommand(cmdText, conn); // set the command to the connection
-                reader = cmd.ExecuteReader(); // excute and get into the datareader
-                //cmd.ExecuteNonQuery(); Execute with no query
-                while (reader.Read())
-                {
-                    //listBox1.Items.Add(reader.GetString(0)); // get the information as a string at the column index 0
-                }
-            }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show("Error: " + ex.ToString());
-            }
-            finally // what to do after try/catch is done
-            {
-                if (conn != null)
-                {
-                    conn.Close();
-                }
-            }
         }
     }
 }
