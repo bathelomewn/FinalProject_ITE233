@@ -32,15 +32,13 @@
             this.sessionName = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.sessionAdd = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.registerActivity = new System.Windows.Forms.Button();
-            this.chooseActivity = new System.Windows.Forms.Button();
-            this.RegisterStudent = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Details = new System.Windows.Forms.Button();
             this.signupSheets = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.registerActivity = new System.Windows.Forms.Button();
+            this.chooseActivity = new System.Windows.Forms.Button();
+            this.RegisterStudent = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,56 +84,6 @@
             this.sessionAdd.UseVisualStyleBackColor = true;
             this.sessionAdd.Click += new System.EventHandler(this.sessionAdd_Click);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.registerActivity);
-            this.groupBox1.Controls.Add(this.chooseActivity);
-            this.groupBox1.Controls.Add(this.RegisterStudent);
-            this.groupBox1.Location = new System.Drawing.Point(20, 124);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(253, 215);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Menu";
-            // 
-            // registerActivity
-            // 
-            this.registerActivity.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerActivity.Location = new System.Drawing.Point(8, 154);
-            this.registerActivity.Margin = new System.Windows.Forms.Padding(4);
-            this.registerActivity.Name = "registerActivity";
-            this.registerActivity.Size = new System.Drawing.Size(237, 53);
-            this.registerActivity.TabIndex = 2;
-            this.registerActivity.Text = "RegisterActivities";
-            this.registerActivity.UseVisualStyleBackColor = true;
-            this.registerActivity.Click += new System.EventHandler(this.registerActivity_Click);
-            // 
-            // chooseActivity
-            // 
-            this.chooseActivity.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chooseActivity.Location = new System.Drawing.Point(8, 89);
-            this.chooseActivity.Margin = new System.Windows.Forms.Padding(4);
-            this.chooseActivity.Name = "chooseActivity";
-            this.chooseActivity.Size = new System.Drawing.Size(237, 53);
-            this.chooseActivity.TabIndex = 1;
-            this.chooseActivity.Text = "Choose Activities";
-            this.chooseActivity.UseVisualStyleBackColor = true;
-            this.chooseActivity.Click += new System.EventHandler(this.chooseActivity_Click);
-            // 
-            // RegisterStudent
-            // 
-            this.RegisterStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegisterStudent.Location = new System.Drawing.Point(8, 23);
-            this.RegisterStudent.Margin = new System.Windows.Forms.Padding(4);
-            this.RegisterStudent.Name = "RegisterStudent";
-            this.RegisterStudent.Size = new System.Drawing.Size(237, 53);
-            this.RegisterStudent.TabIndex = 0;
-            this.RegisterStudent.Text = "Register/Edit";
-            this.RegisterStudent.UseVisualStyleBackColor = true;
-            this.RegisterStudent.Click += new System.EventHandler(this.RegisterStudent_Click);
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dateTimePicker1);
@@ -180,21 +128,55 @@
             this.signupSheets.Text = "Signup Sheet";
             this.signupSheets.UseVisualStyleBackColor = true;
             // 
+            // registerActivity
+            // 
+            this.registerActivity.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerActivity.Location = new System.Drawing.Point(30, 269);
+            this.registerActivity.Margin = new System.Windows.Forms.Padding(4);
+            this.registerActivity.Name = "registerActivity";
+            this.registerActivity.Size = new System.Drawing.Size(237, 53);
+            this.registerActivity.TabIndex = 6;
+            this.registerActivity.Text = "RegisterActivities";
+            this.registerActivity.UseVisualStyleBackColor = true;
+            // 
+            // chooseActivity
+            // 
+            this.chooseActivity.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chooseActivity.Location = new System.Drawing.Point(30, 204);
+            this.chooseActivity.Margin = new System.Windows.Forms.Padding(4);
+            this.chooseActivity.Name = "chooseActivity";
+            this.chooseActivity.Size = new System.Drawing.Size(237, 53);
+            this.chooseActivity.TabIndex = 5;
+            this.chooseActivity.Text = "Choose Activities";
+            this.chooseActivity.UseVisualStyleBackColor = true;
+            // 
+            // RegisterStudent
+            // 
+            this.RegisterStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegisterStudent.Location = new System.Drawing.Point(30, 138);
+            this.RegisterStudent.Margin = new System.Windows.Forms.Padding(4);
+            this.RegisterStudent.Name = "RegisterStudent";
+            this.RegisterStudent.Size = new System.Drawing.Size(237, 53);
+            this.RegisterStudent.TabIndex = 4;
+            this.RegisterStudent.Text = "Register/Edit";
+            this.RegisterStudent.UseVisualStyleBackColor = true;
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(579, 352);
+            this.Controls.Add(this.registerActivity);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.chooseActivity);
             this.Controls.Add(this.sessionAdd);
+            this.Controls.Add(this.RegisterStudent);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.sessionName);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HomePage";
             this.Text = "Home Page";
-            this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -206,14 +188,13 @@
         private System.Windows.Forms.ComboBox sessionName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button sessionAdd;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button registerActivity;
-        private System.Windows.Forms.Button chooseActivity;
-        private System.Windows.Forms.Button RegisterStudent;
         private System.Windows.Forms.Button Details;
         private System.Windows.Forms.Button signupSheets;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button registerActivity;
+        private System.Windows.Forms.Button chooseActivity;
+        private System.Windows.Forms.Button RegisterStudent;
     }
 }
 
