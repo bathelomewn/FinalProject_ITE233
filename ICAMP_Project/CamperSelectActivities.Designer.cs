@@ -28,198 +28,257 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.subject1Add = new System.Windows.Forms.ComboBox();
-            this.Subject1 = new System.Windows.Forms.Label();
-            this.Subject2 = new System.Windows.Forms.Label();
-            this.subject2Add = new System.Windows.Forms.ComboBox();
-            this.Subject3 = new System.Windows.Forms.Label();
-            this.subject3Add = new System.Windows.Forms.ComboBox();
-            this.Subject5 = new System.Windows.Forms.Label();
-            this.subject5Add = new System.Windows.Forms.ComboBox();
-            this.Subject4 = new System.Windows.Forms.Label();
-            this.subject4Add = new System.Windows.Forms.ComboBox();
+            this.Save = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.sub5 = new System.Windows.Forms.ListBox();
+            this.sub4 = new System.Windows.Forms.ListBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.sub3 = new System.Windows.Forms.ListBox();
+            this.sub2 = new System.Windows.Forms.ListBox();
+            this.sub1 = new System.Windows.Forms.ListBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.bunkBox = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.bunk = new System.Windows.Forms.ComboBox();
-            this.studentNames = new System.Windows.Forms.ComboBox();
-            this.clear = new System.Windows.Forms.Button();
-            this.saveDB = new System.Windows.Forms.Button();
-            this.date = new System.Windows.Forms.Label();
+            this.nameBox = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblMainTitle = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // subject1Add
+            // Save
             // 
-            this.subject1Add.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subject1Add.FormattingEnabled = true;
-            this.subject1Add.Location = new System.Drawing.Point(130, 126);
-            this.subject1Add.Name = "subject1Add";
-            this.subject1Add.Size = new System.Drawing.Size(196, 36);
-            this.subject1Add.TabIndex = 0;
+            this.Save.Location = new System.Drawing.Point(392, 349);
+            this.Save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(95, 38);
+            this.Save.TabIndex = 17;
+            this.Save.Text = "Save";
+            this.Save.UseVisualStyleBackColor = true;
+            this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
-            // Subject1
+            // label1
             // 
-            this.Subject1.AutoSize = true;
-            this.Subject1.Location = new System.Drawing.Point(130, 103);
-            this.Subject1.Name = "Subject1";
-            this.Subject1.Size = new System.Drawing.Size(67, 17);
-            this.Subject1.TabIndex = 1;
-            this.Subject1.Text = "Subject 1";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(77, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 25);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Bunk";
             // 
-            // Subject2
+            // sub5
             // 
-            this.Subject2.AutoSize = true;
-            this.Subject2.Location = new System.Drawing.Point(368, 103);
-            this.Subject2.Name = "Subject2";
-            this.Subject2.Size = new System.Drawing.Size(67, 17);
-            this.Subject2.TabIndex = 3;
-            this.Subject2.Text = "Subject 2";
+            this.sub5.FormattingEnabled = true;
+            this.sub5.ItemHeight = 16;
+            this.sub5.Items.AddRange(new object[] {
+            "Soccer"});
+            this.sub5.Location = new System.Drawing.Point(609, 54);
+            this.sub5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sub5.Name = "sub5";
+            this.sub5.Size = new System.Drawing.Size(128, 100);
+            this.sub5.TabIndex = 9;
             // 
-            // subject2Add
+            // sub4
             // 
-            this.subject2Add.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subject2Add.FormattingEnabled = true;
-            this.subject2Add.Location = new System.Drawing.Point(368, 126);
-            this.subject2Add.Name = "subject2Add";
-            this.subject2Add.Size = new System.Drawing.Size(196, 36);
-            this.subject2Add.TabIndex = 2;
+            this.sub4.FormattingEnabled = true;
+            this.sub4.ItemHeight = 16;
+            this.sub4.Items.AddRange(new object[] {
+            "Soccer"});
+            this.sub4.Location = new System.Drawing.Point(461, 52);
+            this.sub4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sub4.Name = "sub4";
+            this.sub4.Size = new System.Drawing.Size(128, 100);
+            this.sub4.TabIndex = 8;
             // 
-            // Subject3
+            // groupBox1
             // 
-            this.Subject3.AutoSize = true;
-            this.Subject3.Location = new System.Drawing.Point(613, 103);
-            this.Subject3.Name = "Subject3";
-            this.Subject3.Size = new System.Drawing.Size(67, 17);
-            this.Subject3.TabIndex = 5;
-            this.Subject3.Text = "Subject 3";
+            this.groupBox1.Controls.Add(this.sub5);
+            this.groupBox1.Controls.Add(this.sub4);
+            this.groupBox1.Controls.Add(this.sub3);
+            this.groupBox1.Controls.Add(this.sub2);
+            this.groupBox1.Controls.Add(this.sub1);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Location = new System.Drawing.Point(82, 160);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(750, 175);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Activities";
             // 
-            // subject3Add
+            // sub3
             // 
-            this.subject3Add.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subject3Add.FormattingEnabled = true;
-            this.subject3Add.Location = new System.Drawing.Point(613, 126);
-            this.subject3Add.Name = "subject3Add";
-            this.subject3Add.Size = new System.Drawing.Size(196, 36);
-            this.subject3Add.TabIndex = 4;
+            this.sub3.FormattingEnabled = true;
+            this.sub3.ItemHeight = 16;
+            this.sub3.Items.AddRange(new object[] {
+            "Soccer"});
+            this.sub3.Location = new System.Drawing.Point(309, 52);
+            this.sub3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sub3.Name = "sub3";
+            this.sub3.Size = new System.Drawing.Size(128, 100);
+            this.sub3.TabIndex = 7;
             // 
-            // Subject5
+            // sub2
             // 
-            this.Subject5.AutoSize = true;
-            this.Subject5.Location = new System.Drawing.Point(368, 193);
-            this.Subject5.Name = "Subject5";
-            this.Subject5.Size = new System.Drawing.Size(67, 17);
-            this.Subject5.TabIndex = 9;
-            this.Subject5.Text = "Subject 5";
+            this.sub2.FormattingEnabled = true;
+            this.sub2.ItemHeight = 16;
+            this.sub2.Items.AddRange(new object[] {
+            "Soccer"});
+            this.sub2.Location = new System.Drawing.Point(160, 52);
+            this.sub2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sub2.Name = "sub2";
+            this.sub2.Size = new System.Drawing.Size(128, 100);
+            this.sub2.TabIndex = 6;
             // 
-            // subject5Add
+            // sub1
             // 
-            this.subject5Add.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subject5Add.FormattingEnabled = true;
-            this.subject5Add.Location = new System.Drawing.Point(368, 216);
-            this.subject5Add.Name = "subject5Add";
-            this.subject5Add.Size = new System.Drawing.Size(196, 36);
-            this.subject5Add.TabIndex = 8;
+            this.sub1.FormattingEnabled = true;
+            this.sub1.ItemHeight = 16;
+            this.sub1.Items.AddRange(new object[] {
+            "Soccer"});
+            this.sub1.Location = new System.Drawing.Point(14, 53);
+            this.sub1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sub1.Name = "sub1";
+            this.sub1.Size = new System.Drawing.Size(128, 100);
+            this.sub1.TabIndex = 5;
             // 
-            // Subject4
+            // label6
             // 
-            this.Subject4.AutoSize = true;
-            this.Subject4.Location = new System.Drawing.Point(130, 193);
-            this.Subject4.Name = "Subject4";
-            this.Subject4.Size = new System.Drawing.Size(67, 17);
-            this.Subject4.TabIndex = 7;
-            this.Subject4.Text = "Subject 4";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(609, 27);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(67, 17);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Subject 5";
             // 
-            // subject4Add
+            // label5
             // 
-            this.subject4Add.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subject4Add.FormattingEnabled = true;
-            this.subject4Add.Location = new System.Drawing.Point(130, 216);
-            this.subject4Add.Name = "subject4Add";
-            this.subject4Add.Size = new System.Drawing.Size(196, 36);
-            this.subject4Add.TabIndex = 6;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(461, 27);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 17);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Subject 4";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(309, 27);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 17);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Subject 3";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(160, 27);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 17);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Subject 2";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(14, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 17);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Subject 1";
+            // 
+            // bunkBox
+            // 
+            this.bunkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunkBox.FormattingEnabled = true;
+            this.bunkBox.Location = new System.Drawing.Point(137, 99);
+            this.bunkBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunkBox.Name = "bunkBox";
+            this.bunkBox.Size = new System.Drawing.Size(155, 33);
+            this.bunkBox.TabIndex = 20;
+            this.bunkBox.Text = "Select bunk";
+            this.bunkBox.SelectedIndexChanged += new System.EventHandler(this.bunkBox_SelectedIndexChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(571, 103);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(53, 25);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Date";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(360, 349);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(630, 100);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 14;
+            this.dateTimePicker1.Size = new System.Drawing.Size(202, 30);
+            this.dateTimePicker1.TabIndex = 18;
             // 
-            // bunk
+            // nameBox
             // 
-            this.bunk.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunk.FormattingEnabled = true;
-            this.bunk.Items.AddRange(new object[] {
-            "Select",
-            "Green",
-            "Yellow",
-            "Red",
-            "Blue",
-            "Orange"});
-            this.bunk.Location = new System.Drawing.Point(250, 415);
-            this.bunk.Name = "bunk";
-            this.bunk.Size = new System.Drawing.Size(200, 36);
-            this.bunk.TabIndex = 15;
-            this.bunk.Text = "Select Bunk";
+            this.nameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameBox.FormattingEnabled = true;
+            this.nameBox.Location = new System.Drawing.Point(378, 99);
+            this.nameBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nameBox.Name = "nameBox";
+            this.nameBox.Size = new System.Drawing.Size(167, 33);
+            this.nameBox.TabIndex = 21;
+            this.nameBox.Text = "Select Camper";
             // 
-            // studentNames
+            // label7
             // 
-            this.studentNames.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentNames.FormattingEnabled = true;
-            this.studentNames.Location = new System.Drawing.Point(473, 415);
-            this.studentNames.Name = "studentNames";
-            this.studentNames.Size = new System.Drawing.Size(183, 36);
-            this.studentNames.TabIndex = 16;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(312, 103);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 25);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Name";
             // 
-            // clear
+            // lblMainTitle
             // 
-            this.clear.Location = new System.Drawing.Point(473, 502);
-            this.clear.Name = "clear";
-            this.clear.Size = new System.Drawing.Size(99, 43);
-            this.clear.TabIndex = 37;
-            this.clear.Text = "Reset";
-            this.clear.UseVisualStyleBackColor = true;
-            // 
-            // saveDB
-            // 
-            this.saveDB.Location = new System.Drawing.Point(351, 502);
-            this.saveDB.Name = "saveDB";
-            this.saveDB.Size = new System.Drawing.Size(99, 43);
-            this.saveDB.TabIndex = 36;
-            this.saveDB.Text = "Save";
-            this.saveDB.UseVisualStyleBackColor = true;
-            // 
-            // date
-            // 
-            this.date.AutoSize = true;
-            this.date.Location = new System.Drawing.Point(360, 326);
-            this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(38, 17);
-            this.date.TabIndex = 38;
-            this.date.Text = "Date";
+            this.lblMainTitle.AutoSize = true;
+            this.lblMainTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMainTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblMainTitle.Location = new System.Drawing.Point(234, 24);
+            this.lblMainTitle.Name = "lblMainTitle";
+            this.lblMainTitle.Size = new System.Drawing.Size(430, 45);
+            this.lblMainTitle.TabIndex = 22;
+            this.lblMainTitle.Text = "Register Activities Campers";
             // 
             // CamperSelectActivities
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 595);
-            this.Controls.Add(this.date);
-            this.Controls.Add(this.clear);
-            this.Controls.Add(this.saveDB);
-            this.Controls.Add(this.studentNames);
-            this.Controls.Add(this.bunk);
+            this.ClientSize = new System.Drawing.Size(935, 398);
+            this.Controls.Add(this.lblMainTitle);
+            this.Controls.Add(this.Save);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.bunkBox);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.Subject5);
-            this.Controls.Add(this.subject5Add);
-            this.Controls.Add(this.Subject4);
-            this.Controls.Add(this.subject4Add);
-            this.Controls.Add(this.Subject3);
-            this.Controls.Add(this.subject3Add);
-            this.Controls.Add(this.Subject2);
-            this.Controls.Add(this.subject2Add);
-            this.Controls.Add(this.Subject1);
-            this.Controls.Add(this.subject1Add);
+            this.Controls.Add(this.nameBox);
+            this.Controls.Add(this.label7);
             this.Name = "CamperSelectActivities";
             this.Text = "CamperSelectActivities";
+            this.Load += new System.EventHandler(this.CamperSelectActivities_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,21 +286,24 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox subject1Add;
-        private System.Windows.Forms.Label Subject1;
-        private System.Windows.Forms.Label Subject2;
-        private System.Windows.Forms.ComboBox subject2Add;
-        private System.Windows.Forms.Label Subject3;
-        private System.Windows.Forms.ComboBox subject3Add;
-        private System.Windows.Forms.Label Subject5;
-        private System.Windows.Forms.ComboBox subject5Add;
-        private System.Windows.Forms.Label Subject4;
-        private System.Windows.Forms.ComboBox subject4Add;
+        private System.Windows.Forms.Button Save;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox sub5;
+        private System.Windows.Forms.ListBox sub4;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ListBox sub3;
+        private System.Windows.Forms.ListBox sub2;
+        private System.Windows.Forms.ListBox sub1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox bunkBox;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox bunk;
-        private System.Windows.Forms.ComboBox studentNames;
-        private System.Windows.Forms.Button clear;
-        private System.Windows.Forms.Button saveDB;
-        private System.Windows.Forms.Label date;
+        private System.Windows.Forms.ComboBox nameBox;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblMainTitle;
     }
 }

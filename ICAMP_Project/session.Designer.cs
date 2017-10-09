@@ -73,7 +73,7 @@
             // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(207, 216);
+            this.Save.Location = new System.Drawing.Point(226, 228);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(109, 41);
             this.Save.TabIndex = 4;
@@ -113,6 +113,7 @@
             this.Controls.Add(this.startDate);
             this.Name = "session";
             this.Text = "session";
+            this.Load += new System.EventHandler(this.session_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

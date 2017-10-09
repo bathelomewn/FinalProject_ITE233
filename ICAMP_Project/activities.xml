@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Type1>
+  <date>
+    <value>2017-10-05</value>
+    <activity id="1">
+      <name>Soccer1</name>
+      <name>Soccer2</name>
+      <name>Soccer3</name>
+      <name>Soccer4</name>
+      <name>soc</name>
+    </activity>
+    <activity id="2">
+      <name>Soccer5</name>
+      <name>Soccer6</name>
+      <name>Soccer7</name>
+      <name>Piano</name>
+    </activity>
+    <activity id="3">
+      <name>Soccer8</name>
+      <name>Soccer9</name>
+      <name>Soccer10</name>
+      <name>soc</name>
+    </activity>
+    <activity id="4">
+      <name>Soccer11</name>
+      <name>Soccer12</name>
+      <name>Soccer13</name>
+    </activity>
+    <activity id="5">
+      <name>Soccer14</name>
+      <name>Soccer15</name>
+      <name>Soccer16</name>
+    </activity>
+  </date>
+</Type1>

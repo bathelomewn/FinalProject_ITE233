@@ -91,6 +91,9 @@
     <EmbeddedResource Include="CamperRegisterActivities.resx">
       <DependentUpon>CamperRegisterActivities.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CamperSelectActivities.resx">
+      <DependentUpon>CamperSelectActivities.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
